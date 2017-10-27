@@ -1,0 +1,493 @@
+﻿@charset "UTF-8";
+@import url(ionicons.min.css);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of Css Reset ==============*/
+
+body {
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #FE634F;
+}
+h1, h2,  h4, h5, h6 {
+	color: #6b91a6;
+	text-transform: uppercase;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 35px;
+}
+h3
+{
+    color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+/* COLORS===========================
+Logo color: #F0785D
+Lemon color: #A2CA29
+*/
+/*==================================================
+first part: landing page
+================================================*/
+#landing {
+	background-image: url("../images/hero.jpg");
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+	height: 100vh;
+  width: 100%;
+}
+/*logo*/
+.ion-waterdrop {
+    color: #F0785D;
+    font-size: 2.5em;
+    display: table; /* my hack for mozilla browser */
+    position: absolute;
+    margin-left: 0.6em;
+    margin-top: 0.2em;
+}
+/*navigation*/
+.nav.navbar-default.nav-transparent {
+    background-color: transparent; /* !important; */
+    border: none;
+    padding-top: 2em;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin: 0 1.5em;
+    letter-spacing: 0.1em;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #A2CA29;
+}
+/*brand left top*/
+.navbar-default .navbar-brand {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding-left: 3em;
+    letter-spacing: 0.2em;
+}
+.container-fluid>.navbar-header>a:hover {
+	color: #F0785D;
+}
+.brand-underline {
+	border-bottom: 3.5px solid #A2CA29;
+	}
+/*caption */
+.caption-slash {
+	color: #A2CA29;
+}
+.caption-paragraph-slash {
+	color: #F0785D;
+}
+.landing-caption {
+	position: absolute;
+  bottom: 25%;
+  left: 8%;
+  text-align: left;
+  transform: translateY(100%)
+}
+.landing-caption>p {
+	color: #FFF;
+	text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9em;
+  margin-left: 11em;
+  margin-top: 0.8em;
+  letter-spacing: 0.2em;
+}
+/*=======================================
+Overlay
+======================================*/
+.angled-overlay {
+  width: 100%;
+  height: 100px;
+  background-color: #fd634e;
+  opacity: 0.3;
+  position: absolute;
+  bottom: 0;
+  transform: skewY(-2deg);
+  -webkit-transform-origin: right;
+  transform-origin: right;
+}
+
+/*=======================================
+second section of the page
+======================================*/
+#feature1 {
+	color: #FFF;
+	background-color: #A2CA29;
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+.feature1-part-one {
+	color: #FFF;
+	background-color: #A2CA29;
+}
+.explain-more {
+	color: #FFF;
+}
+.explain-more:hover {
+	color: #F0785D;
+	text-decoration: none;
+}
+.col-feature {
+	margin-top: 6em;
+	margin-bottom: 6em;
+}
+.col-feature>i {
+	font-size: 3em;
+	margin-top: 1em;
+}
+.col-feature>h2 {
+	text-transform: capitalize;
+  font-size: 24px;
+	margin: 0.8em 0;
+	font-weight: 400;
+}
+/*=======================
+second part in section 2
+==================================*/
+.feature1-part-two{
+	color: #4D545F;
+	background-color: #FFF;
+	text-align: center;
+  position: relative;
+}
+.content-1-third {
+	padding: 4.2em 2em;
+}
+.features-brief {
+  margin-bottom: 1.5em;
+}
+.feature1-part-two h2 {
+	color: #A2CA29; /*//green heading*/
+	margin-bottom: 0.65em;
+  margin-top: 0.5em;
+}
+.feature1-part-two p {
+	margin: 1.2em 2em 0 2em;
+}
+.feature1-part-two h5 {
+	color: #F0785D; /*//red heading*/
+	font-weight: 600;
+}
+.feature1-part-two i {
+	font-size: 1.4em;
+  position: relative;
+  bottom: 50%;
+  left: 45%;
+	color: #CFDEDA; /*//grey icon*/
+}
+.content-1-third>h5 {
+  font-weight: 600;
+}
+.content-1-third>a {
+	color: #A2CA29;
+	text-decoration: none;
+}
+.content-1-third>a:hover {
+	color: #F0785D;
+	text-decoration: none;
+}
+.content-2-third-woman, .content-2-third-love-body {
+  background-color: #CFDEDA;
+	background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 420px;
+  background-image: url(../images/stretch.jpg);
+}
+
+.content-2-third-love-body {
+  background-image: url(../images/wrist.jpg);
+}
+/*=======================================
+Feature2 section of the page
+======================================*/
+#feature2 {
+	color: #FFF;
+	background-color: #FD634E;
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+#col-lg-4{
+  padding: 0;
+}
+#col-lg-8{
+  padding: 0;
+}
+.content-1-third-jog, .content-2-third-beach {
+  background-color: #CFDEDA;
+	background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+  background-image: url(../images/jogging.jpg);
+}
+.content-2-third-beach {
+  background-image: url(../images/beach.jpg);
+}
+.content-2-third-summer {
+  background-color: #A2CA29;
+  color: #FFF;
+  height: 300px;
+  text-align: left;
+  padding-top: 2em;
+  padding-left: 2em;
+}
+.content-2-third-summer>h2 {
+  margin: 0.8em 2em 0 0.9em;
+  color: #FFF;
+}
+.content-1-third-track {
+  padding: 2em 2em;
+  height: 300px;
+  text-align: left;
+}
+.content-1-third-track>h5 {
+  font-weight: 600;
+  margin: 1.2em 2em 0 2em;
+}
+.content-1-third-track>h2 {
+  margin: 0.5em 2em 0 0.9em;
+}
+i.ion-ios-person {
+  position: absolute;
+  top: 58%;
+  left: 79%;
+  font-size: 3em;
+	color: #CFDEDA; /*//grey icon*/
+}
+/*second part of feature2 ==============*/
+.content-1-third-avocado, .content-2-third-grapes {
+  background-color: #CFDEDA;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+  background-image: url(../images/avocado.jpg);
+}
+.content-2-third-grapes {
+  background-image: url(../images/grapes.jpg);
+}
+.content-1-third-habits {
+  padding: 3em 1em;
+  height: 300px;
+  text-align: left;
+  color: #FFF;
+  background-color: #A2CA29; /* //green icon */
+}
+.content-1-third-habits>h5 {
+  color: #FFF;
+  font-weight: 600;
+  margin: 1.2em 2em 0 2em;
+}
+.content-1-third-habits>h2 {
+  margin: 0.5em 2em 0 0.9em;
+  color: #FFF;
+}
+.content-2-third-involved {
+  background-color: #FFF;
+  height: 300px;
+  text-align: left;
+  padding-top: 4em;
+  padding-left: 2em;
+}
+ i.ion-egg {
+  position: absolute;
+  top: 60%;
+  left: 83%;
+  font-size: 2.1em;
+	color: #FFF;
+}
+i.ion-ios-flower {
+  position: absolute;
+  top: 60%;
+  left: 89%;
+  font-size: 2.2em;
+  color: #CFDEDA; /* //grey icon */
+}
+.content-2-third-involved>p{
+  margin-left: 0;
+}
+/*=======================================
+Footer of the page
+======================================*/
+footer {
+  width: 100%;
+  position: relative;
+  background-color: #0D1119; /* Dark navy blue */
+  color: #FFF;
+  overflow: hidden;
+}
+.launch-ideas {
+  background-color: #CFDEDA;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 600px;
+  background-image: url(../images/sunset.jpg);
+  padding-top: 4em;
+  padding-left: 4em;
+}
+.launch-caption {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%
+}
+.launch-ideas .launch-caption > h2 {
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.launch-ideas .launch-caption > p {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.7em;
+  font-size: 18px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.bg-angled-left, .bg-angled-right {
+  position: absolute;
+  background-color: #0D1119;
+  height: 100%;
+  width: 100%;
+  transform: skewY(-2.5deg);
+  -webkit-transform-origin: left;
+  transform-origin: left center 0px;
+}
+.bg-angled-right {
+  transform: skewY(3deg);
+  -webkit-transform-origin: right;
+  transform-origin: right center 0px;
+}
+.red-angle {
+  position: relative;
+  left: -60%;
+  transform: skewX(88deg);
+  width: 100%;
+  height: 30px;
+  margin-bottom: 50px;
+  background-color: #FE634F;
+  overflow: hidden;
+}
+.footer-details {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 135px;
+}
+.footer-details > .row {
+  margin-bottom: 3em;
+}
+.footer-form {
+  width: 100%;
+}
+.footer-details h3 {
+  text-transform: none;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.footer-details a {
+  padding-right: 20px;
+}
+.footer-details a>i {
+  font-size: 3em;
+}
+.footer-details a>i.ion-social-facebook {
+  color: #3033A0;
+}
+.footer-details a>i.ion-social-twitter {
+  color: #2CB0E0;
+}
+.footer-details a>i.ion-social-youtube{
+  color: #F42213;
+}
+.footer-details a>i.ion-social-linkedin {
+  color:#4146E0;
+}
+.form-inline input, .form-inline button {
+  height: 50px;
+  color: #8297a7;
+  margin-right: 5px;
+  padding-left: 20px;
+}
+button.btn-join {
+    color: #FFF;
+    background-color: #A2CA29;
+}
